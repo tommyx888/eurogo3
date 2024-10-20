@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "EuroGo",
+    "slug": "EuroGo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "0e5832a1-5b4a-4862-b386-28009863e88d"
+      }
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "eu.eurogo.eurogo"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "projectRoot": "./",
+    "scheme": "EuroGo",
+    "plugins": [
+      "expo-router",
+      "@react-native-google-signin/google-signin"
+    ],
+    "owner": "tommyx888"
+  }
+}

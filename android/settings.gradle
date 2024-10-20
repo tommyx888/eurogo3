@@ -1,0 +1,38 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+    // Include the React Native Gradle plugin
+    includeBuild('../node_modules/@react-native/gradle-plugin')
+}
+
+plugins {
+    id("com.facebook.react.rootproject") apply false
+}
+
+rootProject.name = 'workie'
+
+apply from: new File(rootProject.projectDir, '../node_modules/react-native/react.gradle')
+apply from: new File(rootProject.projectDir, '../node_modules/expo/scripts/autolinking.gradle')
+
+include ':app'
+
+// Include the react-native-google-signin module
+include ':@react-native-google-signin_google-signin'
+project(':@react-native-google-signin_google-signin').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-google-signin/google-signin/android')
+
+// If you're using expo-modules-autolinking, you can enable it here:
+// apply from: new File(rootProject.projectDir, '../node_modules/expo-modules-autolinking/scripts/autolinking.gradle')
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+// Apply the React Native settings plugin
+apply plugin: "com.facebook.react.rootproject"

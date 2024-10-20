@@ -1,0 +1,6 @@
+<resources>
+  <string name="app_name">workie</string>
+  <string name="expo_splash_screen_resize_mode" translatable="false">contain</string>
+  <string name="expo_splash_screen_status_bar_translucent" translatable="false">false</string>
+  <string name="server_client_id">509385600676-484m3h8ojb008595i1o84amterpgc2n1.apps.googleusercontent.com</string>
+</resources>
